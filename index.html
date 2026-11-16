@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111713">
+  <meta name="description" content="A premium graduation keepsake celebrating Gee M. Oyugi on 18 November 2026.">
+  
+  <title>Gee M. Oyugi | Graduation Keepsake</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <header class="header">
+    <a href="#home" class="brand">
+      <span class="brand-icon">G<span>.</span></span>
+      <span class="brand-text">
+        GEE M. OYUGI
+        <small>GRADUATION EDITION · 2026</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#tribute">The Tribute</a>
+      <a href="#gallery">Portraits</a>
+      <a href="#celebration">The Special Day</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button>
+      <a href="#celebration" class="header-date">18 NOV 2026</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> A MILESTONE WORTH CELEBRATING</p>
+        <p class="script-intro">A remarkable journey. A brilliant future.</p>
+        
+        <h1>Gee M.<br><em>Oyugi.</em></h1>
+
+        <p class="hero-description">
+          Today, we celebrate more than an academic milestone. We celebrate your strength,
+          perseverance, and the extraordinary dedication that brought you to this moment.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#tribute" class="button button-gold">Discover Her Story ↗</a>
+          <button class="button button-outline" id="surpriseButton">Celebrate ✨</button>
+        </div>
+
+        <div class="hero-caption">
+          <span>✳</span> CLASS OF 2026 · 18 NOVEMBER 2026
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="portrait-ring"></div>
+
+        <div class="hero-photo photo-back" id="triggerPhoto1">
+          <img src="assets/gee-portrait-1.jpg" alt="Portrait of Gee M. Oyugi">
+        </div>
+
+        <div class="hero-photo photo-front" id="triggerPhoto2">
+          <img src="assets/gee-portrait-2.jpg" alt="Gee M. Oyugi graduation celebration portrait">
+        </div>
+
+        <div class="year-seal">
+          <span>CLASS OF</span>
+          <strong>2026</strong>
+          <i></i>
+          <span>HER MOMENT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRIBUTE SECTION -->
+    <section class="section tribute-section reveal" id="tribute">
+      <div class="section-container">
+        <div class="section-label">
+          <span>01</span><i></i> WORDS FROM THE HEART
+        </div>
+
+        <div class="tribute-layout">
+          <div class="tribute-heading">
+            <p class="eyebrow">A TRIBUTE TO EXCELLENCE</p>
+            <h2>Every step<br>built this<br><em>victory.</em></h2>
+            <div class="ornament">──────── ✳ ────────</div>
+          </div>
+
+          <div class="tribute-card">
+            <span class="quote-mark">“</span>
+            <h3>Dear Gee,</h3>
+            <p>
+              Behind every remarkable achievement lies a story of quiet resilience, focus,
+              and the unwavering courage to keep moving forward even when challenges arise.
+            </p>
+            <p>
+              This milestone is a testament to your hard work and brilliance. Your journey
+              inspires everyone around you, and this celebration belongs entirely to you.
+            </p>
+            <p>
+              May this new chapter open doors to incredible opportunities, rewarding experiences,
+              and continuous success in everything you set your mind to do.
+            </p>
+            <div class="signature">
+              With boundless admiration and pride <span>♥</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTRAIT GALLERY SECTION -->
+    <section class="section gallery-section reveal" id="gallery">
+      <div class="section-container">
+        <div class="gallery-header">
+          <div>
+            <div class="section-label">
+              <span>02</span><i></i> VISUAL MEMORIES
+            </div>
+            <h2>The Portrait<br><em>Collection.</em></h2>
+          </div>
+          <p class="gallery-intro">
+            Click any portrait to examine it in high-resolution detail. Two stunning captures
+            commemorating an unforgettable day.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <div class="image-frame">
+              <img src="assets/gee-portrait-1.jpg" alt="Gee M. Oyugi portrait one" class="zoomable" loading="lazy">
+              <div class="image-overlay"><span>🔍 Click to Expand</span></div>
+            </div>
+            <figcaption>
+              <strong>Portrait I</strong>
+              <span>Elegance & Grace</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card offset-card">
+            <div class="image-frame">
+              <img src="assets/gee-portrait-2.jpg" alt="Gee M. Oyugi portrait two" class="zoomable" loading="lazy">
+              <div class="image-overlay"><span>🔍 Click to Expand</span></div>
+            </div>
+            <figcaption>
+              <strong>Portrait II</strong>
+              <span>The Milestone Celebration</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CELEBRATION DETAILS SECTION -->
+    <section class="section celebration-section reveal" id="celebration">
+      <div class="section-container">
+        <div class="celebration-frame">
+          <div class="frame-edge top-edge"><span>✦</span><span>EST. 2026</span><span>✦</span></div>
+
+          <div class="celebration-inner">
+            <p class="eyebrow">OFFICIAL COMMEMORATION</p>
+            <h2>Gee M. <em>Oyugi</em></h2>
+            <div class="gold-line"></div>
+            
+            <p class="celebration-subtitle">HONOURING A BRILLIANT ACADEMIC JOURNEY</p>
+
+            <div class="date-badge-container">
+              <div class="date-box">
+                <span class="day-name">WEDNESDAY</span>
+                <span class="day-number">18</span>
+                <span class="month-name">NOVEMBER 2026</span>
+              </div>
+            </div>
+
+            <p class="celebration-note">
+              "The future belongs to those who believe in the beauty of their dreams."
+            </p>
+
+            <div class="action-buttons-group">
+              <button class="button button-gold" id="grandCelebrateBtn">Launch Celebration 🎉</button>
+              <button class="button button-outline" id="shareButton">Share Keepsake ↗</button>
+              <button class="button button-outline" id="printButton">Save as PDF ↓</button>
+            </div>
+          </div>
+
+          <div class="frame-edge bottom-edge"><span>✦</span><span>THE JOURNEY CONTINUES</span><span>✦</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="brand-icon">G<span>.</span></span>
+      <p>Created with love and pride to celebrate <strong>Gee M. Oyugi</strong>.</p>
+      <span class="footer-badge">18 · 11 · 2026</span>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged portrait view">
+    <button class="lightbox-close" id="closeLightbox" aria-label="Close image">×</button>
+    <img id="lightboxImg" src="" alt="Enlarged view">
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
